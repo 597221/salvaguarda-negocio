@@ -132,12 +132,15 @@ const Index = () => {
 
             <div className="grid md:grid-cols-3 gap-6">
               <Card className="overflow-hidden">
-                <img
-                  src={sealedImage}
-                  alt="Negocio sellado por la alcaldía"
+                <video
                   className="w-full h-64 object-cover"
-                  loading="lazy"
-                />
+                  controls
+                  poster={sealedImage}
+                  preload="metadata"
+                >
+                  <source src="(PONER_ENLACE_VIDEO_MP4_AQUI)" type="video/mp4" />
+                  Tu navegador no soporta el video.
+                </video>
               </Card>
               <Card className="overflow-hidden">
                 <img
